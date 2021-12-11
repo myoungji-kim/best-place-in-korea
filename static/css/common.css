@@ -1,0 +1,192 @@
+@import url('https://cdn.rawgit.com/innks/NanumSquareRound/master/nanumsquareround.min.css');
+
+@font-face {
+    font-family: 'Gmarket Sans';
+    font-style: normal;
+    font-weight: 700;
+    src:local('Gmarket Sans Bold'), local('GmarketSans-Bold'),
+    url('http://script.ebay.co.kr/fonts/GmarketSansBold.woff2') format(woff2),
+    url('http://script.ebay.co.kr/fonts/GmarketSansBold.woff') format(woff),
+}
+
+@font-face {
+    font-family: 'Gmarket Sans';
+    font-style: normal;
+    font-weight: 500;
+    src:local('Gmarket Sans Medium'), local('GmarketSans-Medium'),
+    url('http://script.ebay.co.kr/fonts/GmarketSansMedium.woff2') format(woff2),
+    url('http://script.ebay.co.kr/fonts/GmarketSansMedium.woff') format(woff),
+}
+
+@font-face {
+    font-family: 'Gmarket Sans';
+    font-style: normal;
+    font-weight: 300;
+    src:local('Gmarket Sans Light'), local('GmarketSans-Light'),
+    url('http://script.ebay.co.kr/fonts/GmarketSansLight.woff2') format(woff2),
+    url('http://script.ebay.co.kr/fonts/GmarketSansLight.woff') format(woff),
+}
+
+body {
+    background: #303240;
+    -ms-overflow-style: none;
+    min-width: 1500px;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0px;
+}
+
+.reset { padding:0px; margin:0px; clear: both; }
+ 
+#title-box {
+    width: 100%;
+    min-width: 600px;
+    padding-top: 55px;
+    text-align: center;
+    color: white;
+}
+
+#title-box .title {
+    font-family: Gmarket Sans;
+    font-weight: 700;
+    font-size: 50px;
+    letter-spacing: 0.03em;
+}
+
+#title-box .sub-title {
+    width: 50%;
+    min-width: 600px;
+    margin: 34px auto;
+}
+
+#title-box .sub-title td {
+    font-family: Gmarket Sans;
+    font-weight: 500;
+    font-size: 18px;
+    width: 40px;
+}
+
+#contents-container {
+	font-family: 'NanumSquareRound', sans-serif;
+	font-weight: 500;
+}
+
+#contents-container {
+    padding: 40px;
+}
+
+#contents-container .places-container {
+    float: left;
+    width: 50%;
+    min-width: 700px;
+}
+
+#contents-container .places-container .comments {
+    margin-bottom: 20px;
+}
+
+#contents-container .places-container .comments .image {
+    float: left;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    border-radius: 100px;
+    overflow: hidden;
+}
+
+#contents-container .places-container .comments img {
+   width: 100%;
+}
+
+#contents-container .places-container .comments span {
+    display: inline-block;
+    padding: 8px;
+    font-size: 23px;
+    font-weight: 600;
+    color: white;
+}
+
+#contents-container .places-container .infos-container {
+    position: relative;
+    overflow-y: auto;
+    height: 550px;
+}
+
+#contents-container .places-container .infos-container::-webkit-scrollbar { 
+    display: none; 
+}
+
+
+.boxes-container { 
+    display: block; 
+    width:33%; 
+    float: left; 
+    margin-bottom: 35px; 
+}
+
+.boxes-container .box { 
+    width: 93%; 
+    height: 280px; 
+    margin: auto; 
+    background: #ffffff; 
+    border-radius: 10px; 
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.boxes-container .box .image-box { 
+    width: 100%; 
+    height: 180px; 
+    margin: auto; 
+}
+
+.boxes-container .box .image-box img { 
+    object-fit: cover; 
+    width: 100%; 
+    height: 100%; 
+    overflow: hidden; 
+    background: #C4C4C4; 
+    border-radius: 10px 10px 0px 0px; 
+}
+
+.boxes-container .box .text-box {
+    padding: 15px; 
+}
+
+.boxes-container .box .text-box .name {
+    display: block;
+    color: #202124;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.boxes-container .box .text-box .score {
+    display: inline-block;
+    color: #5F6368;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0px 5px 4.5px 0px;
+}
+
+.boxes-container .box .text-box .cnt_review {
+    color: #5F6368;
+    font-size: 15px;
+}
+
+.boxes-container .box .text-box .info {
+    display: block;
+    color: #757575;
+    font-size: 14px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+#contents-container .map-box {
+    float: right;
+    width: 50%;
+    min-width: 600px;
+    margin-top: 65px;
+}
