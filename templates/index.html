@@ -12,7 +12,7 @@
 </head>
 <body>
     <div id = "title-box">
-        <span class = "title">BEST PLACE in <span style="color:#3ACD7F">KOREA</span> </span>
+        <span class = "title">BEST PLACES in <span style="color:#3ACD7F">KOREA</span> </span>
         <table class = "sub-title">
             <tr>
                 <td>KIM</td>
@@ -31,10 +31,10 @@
                 <span>각 장소의 위치는 오른쪽 지도에서 확인하실 수 있습니다.</span>
             </div>
             <ul class="infos-container">
-                {% for i in range(10) %}
+                {% for i in range(title | length) %}
                 <li class= "boxes-container">
                     <div class= "box">
-                        <div class="image-box"><img src=""/></div>
+                        <div class="image-box"><img src="{{ image[i] }}"/></div>
                         <div class="text-box">
                             <span class="name">{{ title[i] }}</span>
                             <span class="score">{{ score[i] }}</span>
