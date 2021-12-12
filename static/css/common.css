@@ -187,6 +187,8 @@ ul {
 #contents-container .map-box {
     float: right;
     width: 50%;
+    height: 530px;
     min-width: 600px;
     margin-top: 65px;
+    background-color: #d1d4dd;
 }
