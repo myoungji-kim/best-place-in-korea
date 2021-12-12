@@ -10,6 +10,7 @@ def add_list(group, list):
 def crawling_sites(url):
     response = requests.request('GET', url)
     soup = BeautifulSoup(response.content, 'html.parser')
+    
     # 데이터 수집 위치 + 저장할 리스트 생성
     titles = soup.select('div.rbj0Ud div')
     places_title = []
@@ -22,12 +23,16 @@ def crawling_sites(url):
 
     infos = soup.select('div.nFoFM')
     places_info = []
-
+    
+    images = soup.select('img.R1Ybne.YH2pd')
+    places_image = []
+    
+    for one in images[1:]:
+        places_image.append(one['data-src'])
 
     add_list(titles, places_title)
     add_list(scores, places_score)
     add_list(cnt_reviews, places_cnt_review)
     add_list(infos, places_info)
 
-
-    return places_title, places_score, places_cnt_review, places_info
+    return places_title, places_score, places_cnt_review, places_info, places_image

@@ -13,6 +13,7 @@ def drawing_map():
         scores = crawling.crawling_sites(url)[1]
         cnt_reviews = crawling.crawling_sites(url)[2]
         infos = crawling.crawling_sites(url)[3]
+        images = crawling.crawling_sites(url)[4]
         
 
         # 시각화 결과물 템플릿을 html_map 변수에 담기 (단, 시각화 결과물객체 뒤에  ._repr_html_() 붙이기)
@@ -20,7 +21,7 @@ def drawing_map():
 
         # render_template() 내부 파라미터 작성하기
         return render_template("index.html", map = html_map, 
-                               title = titles, score = scores, cnt_review = cnt_reviews, info = infos)
+                               title = titles, score = scores, cnt_review = cnt_reviews, info = infos, image = images)
 
 if __name__ == "__main__":
 	app.run(host = "127.0.0.1", port = 5000, debug = True)

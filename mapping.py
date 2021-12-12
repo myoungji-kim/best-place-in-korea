@@ -4,7 +4,7 @@ from geopy.geocoders import Nominatim
 
 def drawing_map(url):
     sites = crawling.crawling_sites(url)[0]
-    map = folium.Map(location=[36.501, 127.870], zoom_start=7)
+    map = folium.Map(location=[36.501, 127.870], zoom_start=7, height = '100%')
     geolocator = Nominatim(user_agent='main')
 
     for site in sites:
